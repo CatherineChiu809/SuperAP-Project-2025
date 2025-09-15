@@ -1,17 +1,19 @@
 function displayValue() {
-    // Get the input element and its value
-
-
     // Get a reference to the button
     const subButton = document.getElementById("sub");
 
     // Define the function to execute on click
-    function handleClick() {
-        console.log("Button was clicked!");
+    function handleSubmit(event) {
+        event.preventDefault();
         const inputElement = document.getElementById("task");
         const newTask = inputElement.value;
-        document.getElementById("taskList").innerHTML += newTask;
+        const taskList = document.getElementById("taskList");
+        taskList.innerHTML += newTask + "<br>";
+        document.getElementById("taskList").innerHTML = "newTask";
+        inputElement.value = "";
     }
     // Attach the event listener
-    myButton.addEventListener("click", handleClick);
+    const formElement = document.getElementById(taskForm);
+    formElement.addEventListener("submit", handleSubmit);
 }
+
