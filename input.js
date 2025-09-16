@@ -9,11 +9,10 @@ function displayValue() {
         const newTask = inputElement.value;
         const taskList = document.getElementById("taskList");
         taskList.innerHTML += newTask + "<br>";
-        document.getElementById("taskList").innerHTML = "newTask";
         inputElement.value = "";
     }
     // Attach the event listener
     const formElement = document.getElementById(taskForm);
     formElement.addEventListener("submit", handleSubmit);
 }
-
+window.onload = displayValue;
