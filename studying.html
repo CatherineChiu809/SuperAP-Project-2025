@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <center>
-            <p>This is where the study essay will go</p>
-        </center>
-    </body>
+<head>
+    <title>Study App</title>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <script>
+        fetch('navbar.html')
+          .then(res => res.text())
+          .then(html => {
+              document.getElementById('navbar').innerHTML = html;
+          });
+    </script>
+    
+</body>
 </html>
