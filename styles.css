@@ -1,4 +1,10 @@
-.button-group {
+.flex-container {
   display: flex;
-  gap: 20px;
+  justify-content: space-around; /* Distributes space around items */
+  padding: 10px;
+}
+
+.flex-item {
+  padding: 20px;
+  margin: 5px;
 }
