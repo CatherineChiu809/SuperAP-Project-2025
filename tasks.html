@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>To Do List</title>
-    </head>
-    <body>
-        <div id="navbar"></div>
-
-        <script>
-            fetch('navbar.html')
-                .then(res => res.text())
-                .then(html => {
-                document.getElementById('navbar').innerHTML = html;
-            });
-        </script>
         <center>
             <form id="taskForm">
                 <input type="text" id="task" name="newtasker" placeholder="Add a new task">
