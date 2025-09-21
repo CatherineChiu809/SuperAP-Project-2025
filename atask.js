@@ -1,4 +1,4 @@
-class Animal {
+class atask {
     constructor(s) {
         subject = s;
         clicked = false;
